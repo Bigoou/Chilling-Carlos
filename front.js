@@ -1,8 +1,5 @@
-
-
 // The amount of symbol we want to place;
-var count = 100;
-var spaceship = document.querySelector(".spaceship");
+var count = 50;
 
 // Create a symbol, which we will use to place instances of later:
 var path = new Path.Circle({
@@ -58,7 +55,6 @@ function onFrame(event) {
     }
     // Rotate spaceship by the vector with css
     vector = vector + (handVector * 100 - vector) / 30;
-    spaceship.style.transform = "rotate(" + (vector.angle - 90) + "deg)";
 
     // Run through the active layer's children list and change
     // the position of the placed symbols:

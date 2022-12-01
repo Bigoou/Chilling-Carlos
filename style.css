@@ -22,9 +22,25 @@ canvas[resize] {
 
 .spaceship {
     position : absolute;
+    z-index: 1;
     top : 50%;
     left : 50%;
     transform : translate(-50%, -50%);
     width : 150px;
     transition: 0.1s ease-in-out;
+}
+
+#canvasFront {
+    position : absolute;
+    top : 0;
+    left : 0;
+    z-index : 2;
+    background: transparent;
+}
+
+#myCanvas {
+    position : absolute;
+    top : 0;
+    left : 0;
+    z-index : 0;
 }
